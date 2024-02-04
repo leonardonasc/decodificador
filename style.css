@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f3f5fc;
+  --white: #ffffff;
+  --darkblue: #0a3871;
+  --textgray: #343a40;
+  --textlightgray: #495057;
+  --buttondesc: #d8dfe8;
+  --fonteint: "Inter", sans-serif;
+}
+
+
+body {
+  background-color: var(--background);
+  font-family: var(--fonteint);
+}
+
+#logo {
+  margin: 1rem;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+#textAreaMain {
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: var(--darkblue);
+  font-family: var(--fonteint);
+  background-color: var(--background);
+}
+
+#textAreaMain::placeholder {
+  color: var(--darkblue);
+}
+
+#alert {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0 1rem 0;
+}
+
+#buttonMain {
+  display: flex;
+  justify-content: space-between;
+}
+
+#buttonCript {
+  background-color: var(--darkblue);
+  border: none;
+  color: var(--white);
+  padding: 1rem 4rem;
+  border-color: #0a3871;
+  border-radius: 1rem;
+  font-family: var(--fonteint);
+  font-size: 1rem;
+}
+
+#buttonDescript {
+  background-color: var(--buttondesc);
+  color: var(--darkblue);
+  padding: 1rem 4rem;
+  border: 0.01rem solid var(--darkblue);
+  border-radius: 1rem;
+  font-family: var(--fonteint);
+  font-size: 1rem;
+}
+
+#sectionSecondary {
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+
+#textAreaSecondary {
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: var(--textgray);
+  font-family: var(--fonteint);
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+#imagemDiv img {
+  width: 100%; 
+  height: auto;
+  max-height: 200px;
+  display: block; 
+}
+
+#contentDecode {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: center;
+}
+
+#contentDecode h1 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+#copy {
+  background-color: var(--white);
+  color: var(--darkblue);
+  padding: 1rem 6rem;
+  border: 0.01rem solid var(--darkblue);
+  border-radius: 1rem;
+  font-family: var(--fonteint);
+  font-size: 1rem;
+  margin: 0.5rem;
+  display: none;
+}
+
+@media (min-width: 300px) {
+  
+}
