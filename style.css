@@ -87,7 +87,7 @@ body {
   height: 88vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   align-items: center;
   box-shadow: -14px -8px 65px -47px rgba(0,0,0,0.8);

@@ -37,6 +37,12 @@ function decodetext() {
 function copy() {
   let textCopy = document.getElementById("textAreaSecondary");
   navigator.clipboard.writeText(textCopy.value);
+  alert("Texto copiado para área de transferência"); // arrumar aqui depois, mudar esse alert para algo melhor
+  clear();
+}
+
+function clear() {
+   document.getElementById("textAreaSecondary").value = '';
 }
 
 function textVerify() {
@@ -52,7 +58,6 @@ function textVerify() {
       contentPlus.style.display = "none";
       copy.style.display = "block";
   } else {
-    // sec.style.justifyContent = "space-around";
     image.style.display = "block";
     contentPlus.style.display = "block";
     copy.style.display = "none";
