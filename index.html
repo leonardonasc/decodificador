@@ -9,10 +9,9 @@
 
 
     <body>
-      <header>
-        <img src="img/logo.svg" alt="logo-alura" id="logo" />
-      </header>
+       
       <main id="container">
+        <img src="img/logo.svg" alt="logo-alura" id="logo" />
         <section id="sectionMain">
           <textarea
             name="textAreaOne"
@@ -40,6 +39,7 @@
               id="textAreaSecondary"
               cols="30"
               rows="5"
+              oninput="textVerify()"
             ></textarea>
             <div id="contentDecode">
             <div id="imagemDiv">
@@ -49,9 +49,9 @@
               <h1>Nenhuma mensagem <br>encontrada</h1>
               <p>Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
             </div>
-            <div id="buttonCopy">
-              <button id="copy" onclick="copy()">Copiar</button>
-            </div>
+          </div>
+          <div id="buttonCopy">
+            <button id="copy" onclick="copy()">Copiar</button>
           </div>
          
         </section>
